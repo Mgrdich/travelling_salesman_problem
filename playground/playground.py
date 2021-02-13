@@ -1,8 +1,11 @@
+# for more documentation check the notebooks
+# notebooks/lexical_orderings
+
 import numpy as np
 from util.functions import swap, reversePart
 
-val = np.array([0, 1, 2, 3, 4, 5, 7, 6])
-arrayLength = len(val)
+val = np.array([0, 1, 2])
+arrayLength = val.size
 
 # Step 1
 largestI = -1
@@ -15,11 +18,14 @@ for i in range(arrayLength - 1):
 largestJ = -1
 
 for j in range(arrayLength):
-    if val[j] < val[largestI]:
+    if val[largestI] < val[j]:
         largestJ = j
 
+
 # Step 3
-# swap(val, largestI, largestJ)
+swap(val, largestI, largestJ)
 
 # Step 4 reverse from largestI + 1 to the end
-# reversed_list = reversePart(val, largestI + 1, arrayLength - 1)
+reversed_list = reversePart(val, largestI + 1, arrayLength)
+
+print(reversed_list)

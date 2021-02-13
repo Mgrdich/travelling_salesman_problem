@@ -1,3 +1,6 @@
+import numpy as np
+
+
 def swap(arr, i, j):
     """
     Swaps elements of an array and returns the reference
@@ -7,4 +10,7 @@ def swap(arr, i, j):
 
 
 def reversePart(arr, i, j):
-    return arr[0:i] + arr[j:i - 1:-1] + arr[j + 1:]
+    """
+        reverse elements of an array with a Given Indexes
+    """
+    return np.concatenate([arr[0:i], arr[j:i - 1:-1], arr[j + 1:]])
