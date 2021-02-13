@@ -5,6 +5,7 @@ from util.functions import swap, reversePart
 def lexical_ordering(arr):
     """
         Every time it returns next Lexical order
+
         Example
         v0 = [1, 2, 3]
         v = lexical_ordering(v0) # [1,3,2]
