@@ -1,24 +1,21 @@
 import numpy as np
 
 
-# todo turn into Class
-
-
 class Lib:
 
     def __init__(self):
         return
 
     @staticmethod
-    def swap(arr, i, j):
+    def swap(arr: list, i: int, j: int) -> list:
         """
         Swaps elements of an array and returns the reference
-    """
+        """
         arr[i], arr[j] = arr[j], arr[i]
         return arr
 
     @staticmethod
-    def reversePart(arr, i, j):
+    def reversePart(arr: list, i: int, j: int) -> list:
         """
             Reverse elements of an array with a Given Indexes
         """

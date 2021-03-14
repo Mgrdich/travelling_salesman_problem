@@ -1,4 +1,9 @@
-# todo in the future this should be transformed to an class
+class TravelingSalesMan:
+    def __init__(self):
+        return
 
+    def lexicographic_order(self):
+        return
 
-
+    def genetic_order(self):
+        return
