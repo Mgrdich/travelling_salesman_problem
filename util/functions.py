@@ -1,6 +1,8 @@
 import numpy as np
 
 
+# todo turn into Class
+
 def swap(arr, i, j):
     """
         Swaps elements of an array and returns the reference
