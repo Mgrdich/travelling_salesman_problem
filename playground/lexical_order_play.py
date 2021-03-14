@@ -2,7 +2,7 @@
 # notebooks/lexical_orderings
 
 import numpy as np
-from util.functions import swap, reversePart
+from util.Lib import Lib
 
 val = np.array([0, 1, 2])
 arrayLength = val.size
@@ -23,9 +23,9 @@ for j in range(arrayLength):
 
 
 # Step 3
-swap(val, largestI, largestJ)
+Lib.swap(val, largestI, largestJ)
 
 # Step 4 reverse from largestI + 1 to the end
-reversed_list = reversePart(val, largestI + 1, arrayLength)
+reversed_list = Lib.reversePart(val, largestI + 1, arrayLength)
 
 print(reversed_list)

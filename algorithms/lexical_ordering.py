@@ -1,5 +1,5 @@
 import numpy as np
-from util.functions import swap, reversePart
+from util.Lib import Lib
 
 
 def lexical_ordering(arr):
@@ -29,7 +29,7 @@ def lexical_ordering(arr):
             largestJ = j
 
     # Step 3
-    swap(array, largestI, largestJ)
+    Lib.swap(array, largestI, largestJ)
 
     # Step 4 reverse from largestI + 1 to the end
-    return reversePart(array, largestI + 1, array.size)
+    return Lib.reversePart(array, largestI + 1, array.size)
