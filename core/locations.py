@@ -1,4 +1,6 @@
 #  maybe create an upper class that does this for us the whole structure is an array of locations
+from googlemaps import distance_matrix
+
 
 def calcDistances(self, c1, c2):
     """
